@@ -1,0 +1,16 @@
+<%= link_to "Ask Again", ask_path %>
+
+
+<h1>Questions#answer</h1>
+<p>Find me in app/views/questions/answer.html.erb</p>
+
+<%= @user_input %>
+
+<% if @user_input == "I am going to work" %>
+<%= "Great!" %>
+<% elsif @user_input.include? "?" %>
+<%= "Silly question, get dressed and go to work!" %>
+<% else %>
+<%= "I don't care, get dressed and go to work!" %>
+<% end %>
+
